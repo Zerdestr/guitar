@@ -1,0 +1,28 @@
+.browser {
+  margin-bottom: 120px;
+
+  &__wrapper {
+    position: relative;
+    padding: 116px 14px 99px;
+  }
+
+  .title {
+    text-align: left;
+    max-width: 484px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.4;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 25px;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
+}

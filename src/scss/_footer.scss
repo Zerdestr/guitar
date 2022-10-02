@@ -1,0 +1,149 @@
+.footer {
+  background-color: $footerBg;
+  padding: 80px 0 43px;
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  &__contacts {
+    margin-right: auto;
+  }
+
+  &__logo {
+    margin-bottom: 28px;
+    display: inline-block;
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba($color: $black, $alpha: 0.25));
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__contacts-link {
+    line-height: 1.6;
+    padding-left: 44px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: filter 0.2s ease-in-out;
+
+    &--mail {
+      background-image: url("../img/icons/icons.svg#sms");
+    }
+
+    &--location {
+      background-image: url("../img/icons/icons.svg#location");
+    }
+
+    &:hover {
+      filter: brightness(0.5);
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    column-gap: 126px;
+    margin-right: 161px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $menu;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__col-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__col-link {
+    color: rgba($color: $menu, $alpha: 0.6);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: rgba($color: $menu, $alpha: 1);
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  &__social-link {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $menu;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 20px 20px;
+    mask-size: 20px 20px;
+    -webkit-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: $titleSpan;
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__copy {
+    text-align: center;
+  }
+}

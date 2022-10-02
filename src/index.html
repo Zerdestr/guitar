@@ -7,12 +7,30 @@
 
 <body>
 
-  @@include('html/_header.html',{})
-  <main>
-    <img src="@img/news-1.png" alt="">
+  <div class="wrapper">
 
-  </main>
-  @@include('html/_footer.html',{})
+    @@include('html/_header.html',{})
+    <main>
+
+      @@include('html/homepage/_hero.html',{})
+
+      @@include('html/homepage/_store.html',{})
+
+      @@include('html/homepage/_categories.html',{})
+
+      @@include('html/homepage/_brands.html',{})
+
+      @@include('html/homepage/_why.html',{})
+
+      @@include('html/homepage/_customers.html',{})
+
+      @@include('html/homepage/_browser.html',{})
+
+    </main>
+    @@include('html/_footer.html',{})
+
+  </div>
+
   <script src="js/app.min.js"></script>
 </body>
 

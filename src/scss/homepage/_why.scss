@@ -1,0 +1,35 @@
+.why {
+  background-color: $menu;
+  padding: 94px 0;
+  margin-bottom: 240px;
+
+  .title {
+    margin-bottom: 75px;
+    color: $white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px;
+  }
+
+  &__item {
+    text-align: center;
+    padding-top: 112px;
+    max-width: 230px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    color: $white;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

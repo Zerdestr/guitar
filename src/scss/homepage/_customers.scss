@@ -1,0 +1,105 @@
+.customers {
+  margin-bottom: 240px;
+
+  .title {
+    margin-bottom: 109px;
+  }
+
+  &__swiper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    transition-property: transform;
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+
+    &--active {
+      .customers__photo {
+        &::before {
+          left: -81px;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    margin-right: auto;
+    margin-left: 178px;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 27px;
+      background: #ff6428;
+      border-radius: 40px 0px 400px 400px;
+      transform: rotate(-7.72deg);
+      width: 284px;
+      height: 257px;
+      z-index: -1;
+      transition: left 0.5s ease-in-out;
+    }
+  }
+
+  &__figure {
+    max-width: 524px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 56px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.6;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  &__characteristic {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+  }
+
+  &__pagination {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 24px;
+    right: 14px;
+    column-gap: 8px;
+    height: 24px;
+  }
+
+  &__pagination-bullet {
+    width: 10px;
+    height: 16px;
+    background-color: $body;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
+
+    &--active {
+      background-color: $titleSpan;
+      width: 24px;
+      height: 12px;
+      margin: 0 4px;
+    }
+  }
+}

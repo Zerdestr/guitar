@@ -41,7 +41,7 @@ main {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -79,6 +79,7 @@ main {
   font-weight: 400;
   font-size: 44px;
   line-height: 1.2;
+  text-align: center;
 
   span {
     color: $titleSpan;

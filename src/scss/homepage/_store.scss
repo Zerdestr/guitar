@@ -1,0 +1,66 @@
+.store {
+  margin-bottom: 180px;
+
+  .title {
+    margin-bottom: 86px;
+  }
+
+  &__content {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 96px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: $menu;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $titleSpan;
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 40px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    overflow: auto;
+  }
+}
+
+.product-card {
+  min-width: 364px;
+
+  &__name {
+    font-weight: 500;
+    color: $menu;
+    margin-bottom: 7px;
+  }
+
+  &__price {
+    display: inline-block;
+    font-size: 14px;
+  }
+}

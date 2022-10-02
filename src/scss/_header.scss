@@ -1,0 +1,55 @@
+.header {
+  position: fixed;
+  top: 62px;
+  width: 100%;
+  z-index: 20;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__logo {
+    margin-right: 131px;
+    transition: filter 0.2s ease-in-out;
+
+    &:hover {
+      filter: drop-shadow(0px 4px 4px rgba($color: $black, $alpha: 0.25));
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: 56px;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 500;
+    color: rgba($color: $menu, $alpha: 0.4);
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: rgba($color: $menu, $alpha: 1);
+    }
+
+    &:focus {
+      outline: 2px solid $menu;
+      border-radius: 5px;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+}
