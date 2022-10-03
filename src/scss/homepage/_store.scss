@@ -1,8 +1,24 @@
 .store {
   margin-bottom: 180px;
 
+  @media (max-width: 900px) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+
   .title {
     margin-bottom: 86px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__content {
@@ -10,6 +26,14 @@
 
     &:not(:last-child) {
       margin-bottom: 96px;
+
+      @media (max-width: 900px) {
+        margin-bottom: 50px;
+      }
+
+      @media (max-width: 600px) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -19,6 +43,10 @@
     color: $menu;
     text-transform: uppercase;
     margin-bottom: 32px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__link {
@@ -44,15 +72,13 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
     column-gap: 15px;
-    overflow: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
 
 .product-card {
-  min-width: 364px;
-
   &__name {
     font-weight: 500;
     color: $menu;

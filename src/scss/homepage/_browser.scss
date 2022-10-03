@@ -1,9 +1,40 @@
 .browser {
   margin-bottom: 120px;
 
+  @media (max-width: 900px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+
   &__wrapper {
     position: relative;
     padding: 116px 14px 99px;
+
+    @media (max-width: 900px) {
+      padding: 80px 14px 70px;
+    }
+
+    @media (max-width: 600px) {
+      padding: 40px 0px 30px;
+    }
+  }
+
+  &__content {
+    padding-left: 10px;
+    border-radius: 10px;
+    max-width: max-content;
+    background-color: rgba($color: $white, $alpha: 0.7);
+
+    @media (max-width: 900px) {
+      max-width: 445px;
+    }
+
+    @media (max-width: 600px) {
+      max-width: 320px;
+    }
   }
 
   .title {
@@ -13,16 +44,65 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 1.4;
+
+    @media (max-width: 900px) {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 25px;
+  }
+
+  &__link {
+    display: inline-block;
+    border-radius: 7px;
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 15px 0px rgba($color: $black, $alpha: 0.75);
+    }
+
+    &:focus {
+      outline: 2px solid $titleSpan;
+    }
+
+    &:active {
+      outline: transparent;
+      opacity: 0.75;
+    }
+  }
+
+  &__img {
+    @media (max-width: 600px) {
+      width: 120px;
+      height: 40px;
+    }
   }
 
   &__bg {
     position: absolute;
+    z-index: -1;
     right: 15px;
     top: 0;
+
+    @media (max-width: 900px) {
+      width: 468px;
+      height: 433px;
+    }
+
+    @media (max-width: 600px) {
+      width: 280px;
+      height: 270px;
+      right: 0;
+    }
   }
 }

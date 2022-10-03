@@ -1,14 +1,34 @@
 .customers {
   margin-bottom: 240px;
 
+  @media (max-width: 900px) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+
   .title {
     margin-bottom: 109px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__swiper {
     overflow: hidden;
     position: relative;
     margin: 0 25px;
+
+    @media (max-width: 900px) {
+      margin: 0;
+    }
   }
 
   &__wrapper {
@@ -21,45 +41,94 @@
     display: flex;
     align-items: center;
     background-color: $white;
+    justify-content: center;
 
     &--active {
       .customers__photo {
         &::before {
-          left: -81px;
+          transform: scale(1) rotate(-7.72deg);
+
+          @media (max-width: 600px) {
+            left: 50px;
+          }
         }
       }
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      row-gap: 40px;
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      row-gap: 20px;
     }
   }
 
   &__photo {
-    margin-right: auto;
-    margin-left: 178px;
+    margin: 0 auto;
+    padding-left: 15%;
     display: inline-block;
     position: relative;
+    transform: translateX(-15%);
 
     &::before {
       content: "";
       position: absolute;
-      left: 0;
+      left: 80px;
       bottom: 27px;
+      transform: scale(0);
       background: #ff6428;
       border-radius: 40px 0px 400px 400px;
-      transform: rotate(-7.72deg);
       width: 284px;
       height: 257px;
       z-index: -1;
-      transition: left 0.5s ease-in-out;
+      transition: transform 0.5s ease-in-out;
+
+      @media (max-width: 900px) {
+        width: 234px;
+        height: 207px;
+      }
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    @media (max-width: 900px) {
+      width: 276px;
+      height: 291px;
+    }
+
+    @media (max-width: 600px) {
+      width: 176px;
+      height: 191px;
     }
   }
 
   &__figure {
-    max-width: 524px;
+    max-width: 45%;
+
+    @media (max-width: 600px) {
+      max-width: 100%;
+    }
   }
 
   &__text {
     font-size: 24px;
     line-height: 1.6;
     margin-bottom: 56px;
+
+    @media (max-width: 900px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__name {
@@ -68,6 +137,11 @@
     line-height: 1.6;
     color: $black;
     margin-bottom: 8px;
+
+    @media (max-width: 600px) {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
   }
 
   &__characteristic {
@@ -76,6 +150,11 @@
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.08em;
+
+    @media (max-width: 600px) {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__pagination {

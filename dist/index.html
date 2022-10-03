@@ -18,9 +18,18 @@
 
     <nav class="header__nav">
 
-      <a class="header__logo" href="#">
-        <img class="header__img" src="img/logo.svg" alt="logo" width="123" height="29">
-      </a>
+      <div class="header__logos">
+
+        <a class="header__logo" href="#">
+          <img class="header__img" src="img/logo.svg" alt="logo" width="123" height="29">
+        </a>
+
+        <a class="header__logo-mobile" href="#">
+          <img class="header__img" src="img/hero-dec.svg" alt="logo" width="40" height="40">
+        </a>
+
+      </div>
+
 
       <ul class="header__menu">
 
@@ -64,13 +73,31 @@
         Explore 50k+ latest collections of branded guitars online with Rhythm.
       </p>
 
-      <a class="hero__button" href="#">
-        Get the App
-      </a>
+      <div class="hero__actions">
+
+        <a class="hero__button" href="#">
+          Get the App
+        </a>
+
+        <svg class="hero__icon" width="26" height="29">
+          <use xlink:href="img/icons/icons.svg#google-paly-logo"></use>
+        </svg>
+
+        <svg class="hero__icon" width="26" height="32">
+          <use xlink:href="img/icons/icons.svg#apple-logo"></use>
+        </svg>
+
+      </div>
+
 
     </div>
 
-    <img class="hero__bg" src="img/hero-bg.png" alt="Background image" width="672" height="586">
+    <div class="hero__image">
+
+      <img class="hero__bg" src="img/hero-bg.png" alt="Background image" width="672" height="586">
+
+    </div>
+
 
 
   </div>
@@ -443,7 +470,7 @@
 
           <div class="customers__photo">
 
-            <img src="img/Customer-photo-1.png" alt="" width="326" height="341">
+            <img class="customers__img" src="img/Customer-photo-1.png" alt="" width="326" height="341">
 
           </div>
 
@@ -467,7 +494,7 @@
 
           <div class="customers__photo">
 
-            <img src="img/Customer-photo-2.png" alt="" width="326" height="341">
+            <img class="customers__img" src="img/Customer-photo-2.png" alt="" width="326" height="341">
 
           </div>
 
@@ -491,7 +518,7 @@
 
           <div class="customers__photo">
 
-            <img src="img/Customer-photo-1.png" alt="" width="326" height="341">
+            <img class="customers__img" src="img/Customer-photo-1.png" alt="" width="326" height="341">
 
           </div>
 
@@ -515,7 +542,7 @@
 
           <div class="customers__photo">
 
-            <img src="img/Customer-photo-2.png" alt="" width="326" height="341">
+            <img class="customers__img" src="img/Customer-photo-2.png" alt="" width="326" height="341">
 
           </div>
 
@@ -551,35 +578,45 @@
 
     <div class="browser__wrapper">
 
-      <h2 class="title">
-        Browse and buy your <span>favorite guitars</span> with Rhythm.
-      </h2>
+      <div class="browser__content">
 
-      <ul class="browser__list">
+        <h2 class="title">
+          Browse and buy your <span>favorite guitars</span> with Rhythm.
+        </h2>
 
-        <li class="browser__item">
+        <ul class="browser__list">
 
-          <a class="browser__link" href="#">
+          <li class="browser__item">
 
-            <img class="browser__img" src="img/Mobile-app-store-badge-1.png" alt="">
+            <a class="browser__link" href="#">
 
-          </a>
+              <div class="sr-only">Download our android app</div>
 
-        </li>
+              <img class="browser__img" src="img/Mobile-app-store-badge-1.png" alt="" width="192" height="57">
 
-        <li class="browser__item">
+            </a>
 
-          <a class="browser__link" href="#">
+          </li>
 
-            <img class="browser__img" src="img/Mobile-app-store-badge-2.png" alt="">
+          <li class="browser__item">
 
-          </a>
+            <a class="browser__link" href="#">
 
-        </li>
+              <div class="sr-only">Download our iPhone app</div>
 
-      </ul>
+              <img class="browser__img" src="img/Mobile-app-store-badge-2.png" alt="" width="171" height="57">
 
-      <img class="browser__bg" src="img/browser-bg.png" alt="" width="568" height="533">
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+
+
+      <img class="browser__bg" src="img/browser-bg.png" alt="Our app design" width="568" height="533">
 
     </div>
 
