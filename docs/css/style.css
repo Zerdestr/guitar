@@ -808,7 +808,7 @@ main {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-.customers__figure {
+.customers__content {
   max-width: 45%;
 }
 
@@ -1433,7 +1433,7 @@ main {
     height: 191px;
   }
 
-  .customers__figure {
+  .customers__content {
     max-width: 100%;
   }
 
